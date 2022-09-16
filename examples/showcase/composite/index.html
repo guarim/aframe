@@ -32,13 +32,13 @@
 	</a-entity>
        
       <a-entity 
-	   tube-geometry="curveData: #path; type: parametric-curve; tubeSegments: 200; radius: 0.004; tubeColor: yellow;">
+	   tube-geometry="curveData: #helix; type: parametric-curve; tubeSegments: 200; radius: 0.004; tubeColor: yellow;">
       </a-entity>
 
       <a-sky src="#lake"></a-sky>
       <a-gltf-model src="#sculpture" position="0 -1 -5" scale="3 3 3" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 15000"></a-gltf-model>
       <a-gltf-model src="#jverne" position="0 -2 -5" scale="0.4 0.4 0.4" rotation="0 90 0" ></a-gltf-model>
-      <a-image src="#pdx" width="10" height="5" position="-6 -4 -20" scale="0.2 0.2 0.2" curve-follow="curveData: #helix; type: parametric-curve; duration: 10; loop: true></a-image>
+      <a-image src="#pdx" width="10" height="5" position="-6 -4 -20" scale="0.2 0.2 0.2" rotation="0 90 0" curve-follow="curveData: #helix; type: parametric-curve; duration: 10; loop: true></a-image>
     </a-scene>
   </body>
 </html>
