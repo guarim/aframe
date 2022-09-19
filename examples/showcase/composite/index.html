@@ -23,19 +23,18 @@
         <a-asset-item id="jverne" src="sculpture.glb"></a-asset-item>
       </a-assets>
 	    
-      <a-entity id="path"
-	parametric-curve1="xyzFunctions: 2*cos(t), 0.5*cos(3*t) + 2, 2*sin(t);  tRange: 0, 6.283;">
+         
+      <a-entity id="helix" 
+	  parametric-curve="xyzFunctions: cos(t), 0.2*t, sin(t);  tRange: 0, 20;">
       </a-entity>
-	    
-	<a-entity id="helix" 
-	  parametric-curve="xyzFunctions: cos(t), 0.2*t, sin(t);  tRange: 0, 200;">
-	</a-entity>
        
       <a-entity 
-	   tube-geometry="curveData: #helix; type: parametric-curve; tubeSegments: 1000; radius: 0.4; tubeColor: yellow;">
+	  curve-geometry="curveData: #helix; type: parametric-curve;  totalPoints: 10000; lineColor: black;" position="-2 0 -5" scale="5 5 5">
       </a-entity>
 
-      <a-sky src="#lake"></a-sky>
+      <a-sky 
+	  src="#lake">
+      </a-sky>
       <a-gltf-model src="#sculpture" position="0 -1 -5" scale="3 3 3" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 15000"></a-gltf-model>
       <a-gltf-model src="#jverne" position="0 -2 -5" scale="0.4 0.4 0.4" rotation="0 90 0" ></a-gltf-model>
       <a-image src="#pdx" width="10" height="5" position="-6 -4 -20" scale="0.2 0.2 0.2" rotation="0 90 0" curve-follow="curveData": #helix; type: parametric-curve; duration: 10; loop: true></a-image>
