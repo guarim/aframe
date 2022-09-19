@@ -25,11 +25,11 @@
 	    
          
       <a-entity id="helix" 
-	  parametric-curve="xyzFunctions: cos(t), 0.2*t, sin(t);  tRange: 0, 20;">
+	  parametric-curve="xyzFunctions: cos(t), 0.1*t, sin(t);  tRange: 0, 30;">
       </a-entity>
        
       <a-entity 
-	  curve-geometry="curveData: #helix; type: parametric-curve;  totalPoints: 10000; lineColor: black; radius: 0.4"  rposition="-5 0 -5" scale="7 7 7">
+	  curve-geometry="curveData: #helix; type: parametric-curve;  totalPoints: 10000; lineColor: black; radius: 0.4"  rposition="-5 0 -5" scale="4 4 4">
       </a-entity>
 
       <a-sky 
