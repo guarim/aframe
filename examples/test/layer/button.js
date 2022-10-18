@@ -22,14 +22,14 @@ AFRAME.registerComponent('button', {
     el.setAttribute('material', {color: this.color});
     el.setAttribute('pressable', '');
 
-    labelEl.setAttribute('position', '0 0 0.01');
+    labelEl.setAttribute('position', '0 -1 0.01');
     labelEl.setAttribute('text', {
       value: this.data.label,
       color: 'white',
       align: 'center'
     });
 
-    labelEl.setAttribute('scale', '1.5 1.5 1.5');
+    labelEl.setAttribute('scale', '1.8 1.8 1.8');
     this.el.appendChild(labelEl);
 
     this.bindMethods();
