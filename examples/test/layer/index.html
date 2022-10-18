@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Compositor Layer Example • A-Frame</title>
-    <meta name="description" content="Hello, World! • A-Frame">
+    <title>Consignes Example • A-Frame</title>
+    <meta name="description" content="CONSIGNES">
     <script src="../../../dist/aframe-master.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.3.0/dist/aframe-environment-component.min.js"></script>
     <script src="page-turn.js"></script>
@@ -13,26 +13,16 @@
   <body>
     <a-scene environment="preset: forest" raycaster="objects: [button];" cursor="rayOrigin: mouse">
       <a-assets>
-        <!--
-          SOURCE
-          Title:  Big Buck Bunny
-          Author: Blender Institute
-          URL:    https://peach.blender.org/
-        -->
+        
         <video id="bunny" autoplay preload="auto" loop crossorigin="anonymous" width="1920" height="1080">
-          <source src="https://cdn.aframe.io/videos/bunny.mp4"></source>
+          <source src="thermo.mp4"></source>
         </video>
-        <img id="panel" crossOrigin="anonymous" src="panel.png">
-        <!--
-          SOURCE
-          Title: Ponyo
-          Author: Ghibli Studio
-          URL: http://www.ghibli.jp/works/ponyo/#frame
-        -->
-        <img id="ghibli" crossOrigin="anonymous" src="ghibli.jpg">
+        <img id="panel" crossOrigin="anonymous" src="1.png">
+        
+        <img id="ghibli" crossOrigin="anonymous" src="2.png">
       </a-assets>
       <a-entity
-        layer="src: #panel; width: 1.920; height: 1.038"
+        layer="src: #panel; width: 2.920; height: 2.038"
         position="0 1.8 -1.5"></a-entity>
       <a-entity id="leftHand" toggle-layer laser-controls="hand: left" raycaster="objects: [button]"></a-entity>
       <a-entity id="rightHand" toggle-layer laser-controls="hand: right" raycaster="objects: [button]"></a-entity>
