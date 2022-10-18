@@ -22,7 +22,7 @@ AFRAME.registerComponent('button', {
     el.setAttribute('material', {color: this.color});
     el.setAttribute('pressable', '');
 
-    labelEl.setAttribute('position', '0 -1 0.01');
+    labelEl.setAttribute('position', '0 -0.3 0.01');
     labelEl.setAttribute('text', {
       value: this.data.label,
       color: 'white',
