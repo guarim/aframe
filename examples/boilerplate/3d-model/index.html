@@ -10,10 +10,13 @@
     <a-scene background="color: #ECECEC">
       <a-assets>
         <a-asset-item id="tree" src="alienware_18_gaming_laptop.glb"></a-asset-item>
+        <a-asset-item id="avatar" src="3D_sammy.glb"></a-asset-item>
       </a-assets>
 
       <a-gltf-model src="#tree" rotation="0 0 0"scale"1 1 1"></a-gltf-model>
-      <a-entity position="0 0 0" >
+       <a-entity position="0 0 0" >
+      <a-gltf-model src="#avatar" rotation="0 0 0"scale"1 1 1"></a-gltf-model>
+      <a-entity position="0 2 0" >
         <a-camera></a-camera>
       </a-entity>
     </a-scene>
